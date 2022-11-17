@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>credit</class>
+ <widget class="QDialog" name="credit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>547</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>870</width>
+    <height>547</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>870</width>
+    <height>547</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Credit calculator</string>
+  </property>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>380</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton {
+	background-color: #232323;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #666;
+}
+
+QPushButton:pressed {
+	background-color: #888;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Ежемесячный платеж:</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_Differentiated">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>150</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton {
+	background-color: #232323;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #666;
+}
+
+QPushButton:pressed {
+	background-color: #888;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Differentiated</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_credit">
+   <property name="geometry">
+    <rect>
+     <x>620</x>
+     <y>370</y>
+     <width>181</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	background-color: #ffcc00;
+	color: #1a1400;
+	font-family: Rubik;
+	font-size: 16pt;
+	font-weight: 600;
+	border: none;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton:hover {
+	background-color: #fcda53;
+}
+
+QPushButton:pressed {
+	background-color: #fce083;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Count</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton {
+	background-color: #232323;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #666;
+}
+
+QPushButton:pressed {
+	background-color: #888;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Срок (месяц):</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>330</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton {
+	background-color: #232323;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #666;
+}
+
+QPushButton:pressed {
+	background-color: #888;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Переплата:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="interes_rate">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>180</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	border: 1px solid white;
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-bottom: 4px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="monthly_payment">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>390</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	border: 1px solid white;
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-bottom: 4px;</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="radioButton_Annuity">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>120</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton {
+	background-color: #232323;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #666;
+}
+
+QPushButton:pressed {
+	background-color: #888;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Annuity</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>230</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton {
+	background-color: #232323;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #666;
+}
+
+QPushButton:pressed {
+	background-color: #888;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Output</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>20</y>
+     <width>71</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton {
+	background-color: #232323;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #666;
+}
+
+QPushButton:pressed {
+	background-color: #888;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Input</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>280</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton {
+	background-color: #232323;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #666;
+}
+
+QPushButton:pressed {
+	background-color: #888;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Общая сумма оплаты:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="total_credit_amount">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>80</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	border: 1px solid white;
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-bottom: 4px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="term">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>130</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	border: 1px solid white;
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-bottom: 4px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>70</y>
+     <width>81</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton {
+	background-color: #232323;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #666;
+}
+
+QPushButton:pressed {
+	background-color: #888;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Тип:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>170</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton {
+	background-color: #232323;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #666;
+}
+
+QPushButton:pressed {
+	background-color: #888;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Процентная ставка:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="total_payment">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>290</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	border: 1px solid white;
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-bottom: 4px;</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="overpayment">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>340</y>
+     <width>251</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	border: 1px solid white;
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-bottom: 4px;</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>70</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+	color: white;
+	font-family: Rubik;
+	font-size: 18pt;
+	font-weight: 600;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+QPushButton {
+	background-color: #232323;
+	border: none;
+}
+
+QPushButton:hover {
+	background-color: #666;
+}
+
+QPushButton:pressed {
+	background-color: #888;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Общая сумма кредита:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
