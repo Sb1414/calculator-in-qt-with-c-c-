@@ -244,9 +244,6 @@ double s21_arithmetic(double a, double b, int sym) {
     if (sym == MOD) {
         res = fmod(a, b);
     }
-    if (sym == UNAR) {
-        res = -a;
-    }
     return res;
 }
 

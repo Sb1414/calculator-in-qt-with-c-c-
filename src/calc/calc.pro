@@ -28,7 +28,7 @@ FORMS += \
     deposit.ui \
     mainwindow.ui
 
-win32:RC_FILE = file.rc
+ICON = img.icns
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

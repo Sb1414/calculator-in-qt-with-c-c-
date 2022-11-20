@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-// #include <ctype.h>
 #include <limits.h>
 #include <string.h>
 
@@ -27,8 +26,7 @@ typedef enum {
     LN = 17,
     LOG = 18,
     ROUNDBRACKET_L = 19,
-    ROUNDBRACKET_R = 20,
-    UNAR = 21
+    ROUNDBRACKET_R = 20
 } type_t;
 
 typedef enum {

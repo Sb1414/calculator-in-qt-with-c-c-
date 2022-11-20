@@ -1,7 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "credit.h"
-#include "deposit.h"
 
 double num_first;
 int flag = 0;
@@ -14,11 +12,7 @@ int is_r_bracket = 1;
 int is_sign = 0;
 int is_x = 0;
 
-MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
-
-{
+MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent) , ui(new Ui::MainWindow) {
     ui->setupUi(this);
 
     connect(ui->pushButton_0, SIGNAL(clicked()), this, SLOT(digits_numbers()));

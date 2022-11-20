@@ -10,6 +10,18 @@
     <height>547</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>870</width>
+    <height>547</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>870</width>
+    <height>547</height>
+   </size>
+  </property>
   <property name="windowTitle">
    <string>Deposit calculator</string>
   </property>
@@ -944,6 +956,9 @@ QPushButton:pressed {
      <width>161</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">QWidget {

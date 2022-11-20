@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "credit.h"
+#include "deposit.h"
 #include "qcustomplot.h"
 #include <QVector>
 #include <QTimer>

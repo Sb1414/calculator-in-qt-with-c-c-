@@ -208,6 +208,20 @@ START_TEST(test_29) {
 }
 END_TEST
 
+START_TEST(test_30) {
+  char a[255] = "atan(7)";
+  double res = s21_parser(a, 0);
+  ck_assert_double_eq_tol(res, 1.42889927219073, 0.000001);
+}
+END_TEST
+
+START_TEST(test_31) {
+  char a[255] = "-70*20-96+sin(1)";
+  double res = s21_parser(a, 0);
+  ck_assert_double_eq_tol(res, -1304.84147098481, 0.000001);
+}
+END_TEST
+
 int main() {
   Suite *s1 = suite_create("s21_smart_calc: ");
   TCase *tc1_1 = tcase_create("s21_smart_calc: ");
@@ -244,6 +258,8 @@ int main() {
   tcase_add_test(tc1_1, test_27);
   tcase_add_test(tc1_1, test_28);
   tcase_add_test(tc1_1, test_29);
+  tcase_add_test(tc1_1, test_30);
+  tcase_add_test(tc1_1, test_31);
 
   srunner_run_all(sr, CK_ENV);
   res = srunner_ntests_failed(sr);

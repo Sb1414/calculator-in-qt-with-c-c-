@@ -41,8 +41,7 @@ dist:
 install:
 	mkdir build
 	cd calc && qmake && make && make clean && rm Makefile && cd ../ && mv calc/calc.app build
-	cd build
-	open calc.app
+	open build/calc.app
 
 uninstall:
 	rm -rf build*
@@ -94,8 +93,8 @@ endif
 clean:
 	rm -rf *.o *.a *.info test.out gcov_test
 	rm -rf report
-	# rm *.gcno
-	# rm *.gcda
+	rm *.gcno
+	rm *.gcda
 	rm -rf Archive_calc_v1.0 
 	rm -rf *tgz
 	rm -rf build
