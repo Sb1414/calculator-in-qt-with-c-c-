@@ -28,7 +28,7 @@ else
 endif
 
 dvi:
-	open info.md 
+	open info.html
 
 dist:
 	rm -rf Archive_calc_v1.0/
